@@ -1,0 +1,25 @@
+.libros{
+    margin-bottom: 120px;
+}
+.libros__title{
+    text-align: center;
+}
+.libros__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem 2rem;
+}
+.libros__content{
+    max-width: 200px;
+}
+.libros__foto{
+    margin-bottom: 1rem;
+}
+.libros__name{
+    margin-bottom: .5rem;
+}
+.libros__anio{
+    font-weight: 700;
+    color: #777;
+}

@@ -1,0 +1,9 @@
+<nav class="menu">
+    <ul class="menu__list">
+        <li class="menu__item"><button (click)="selectedCountry('todos')" [ngClass]="{'active': classActivo('todos')}" class="menu__btn">todos</button></li>
+        <li class="menu__item"><button (click)="selectedCountry('españa')" [ngClass]="{'active': classActivo('españa')}" class="menu__btn">españa</button></li>
+        <li class="menu__item"><button (click)="selectedCountry('reino unido')" [ngClass]="{'active': classActivo('reino unido')}" class="menu__btn">reino unido</button></li>
+        <li class="menu__item"><button (click)="selectedCountry('chile')" [ngClass]="{'active': classActivo('chile')}" class="menu__btn">chile</button></li>
+        <li class="menu__item"><button (click)="selectedCountry('canadá')" [ngClass]="{'active': classActivo('canadá')}" class="menu__btn">canadá</button></li>
+    </ul>
+</nav>

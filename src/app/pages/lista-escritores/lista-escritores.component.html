@@ -1,0 +1,15 @@
+<app-menu-bar (onPais)="filtrarPaises($event)"></app-menu-bar>
+
+<section class="escritores">
+    <div class="escritores__container bd-container">
+        <a *ngFor="let escritor of arrEscritores" [routerLink]="['/escritor-detalle', escritor.id]" class="escritores__content">
+            <figure class="escritores__foto">
+                <img [src]="escritor.imagen" alt="">
+            </figure>
+            <div class="escritores__data">
+                <h3 class="escritores__name">{{ escritor.nombre }} {{ escritor.apellidos }}</h3>
+                <span class="escritores__pais">{{ escritor.pais }}</span>
+            </div>
+        </a>
+    </div>
+</section>

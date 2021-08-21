@@ -1,0 +1,39 @@
+.menu{
+    text-align: center;
+}
+.menu__list{
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+.menu__item{
+    display: inline;
+}
+.menu__item:last-child .menu__btn{
+    border-right: none;
+}
+.menu__btn{
+    border: none;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    border-right: 2px solid #333;
+    background-color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+.menu__btn:hover,
+.menu__btn.active{
+    background-color: #333;
+    color: #FFF;
+}
+
+@media screen and (max-width: 580px) {
+    .menu__list{
+        display: block;
+    }
+    .menu__btn{
+        width: 100%;
+        border-right: none;
+    }
+}

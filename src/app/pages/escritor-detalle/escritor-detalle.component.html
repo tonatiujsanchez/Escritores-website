@@ -1,0 +1,20 @@
+<section class="bd-container">
+    <div *ngIf="escritor" class="escritor">
+        <div class="escritor__foto">
+            <img [src]="escritor.imagen" [alt]="escritor.nombre">
+        </div>
+        <div class="escritor__data">
+            <h1 class="escritor__nombre"><span class="escritor__id">{{ escritor.id }}.-</span> {{ escritor.nombre }} {{ escritor.apellidos }}</h1>
+            <p class="escritor__pais">{{ escritor.pais }}</p>
+            <div class="escritor__botones">
+                <button (click)="verLibros()" class="escritor__btn btn-azul">Ver Libros</button>
+                <button (click)="regresar()" class="escritor__btn btn-rojo">
+                    <i class='bx bx-arrow-back'></i>
+                    Regresar
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<router-outlet></router-outlet>

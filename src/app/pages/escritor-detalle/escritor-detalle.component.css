@@ -1,0 +1,62 @@
+.escritor{
+    display: flex;
+    justify-content: center;
+    gap: .5rem 4rem;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+.escritor__foto{
+    width: 350px;
+}
+.escritor__nombre{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+.escritor__pais{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: #777;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.escritor__botones{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.escritor__btn{
+    border: 2px solid #333;
+    padding: .5rem 1rem;
+    min-width: 50%;
+    background-color: #333;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s background, .2s color;
+}
+.escritor__btn:active{
+    transform: scale(.97);
+}
+.escritor__btn i{
+    font-weight: 700;
+}
+.btn-azul{
+    border: 2px solid steelblue;
+    background-color: steelblue;
+    color: #FFF;
+}
+.btn-azul:hover{
+    background-color: #FFF;
+    color: steelblue;
+}
+.btn-rojo{
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: #FFF;
+}
+.btn-rojo:hover{
+    background-color: #FFF;
+    color: crimson;
+}

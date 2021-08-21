@@ -1,0 +1,16 @@
+<section class="libros">
+    <div class="bd-container">
+        <h2 class="libros__title">Libros</h2>
+        <div class="libros__container">
+            <div *ngFor="let libro of libros" class="libros__content">
+                <div class="libros__foto">
+                    <img [src]="libro.imagen" [alt]="libro.titulo">
+                </div>
+                <div class="libros__data">
+                    <h3 class="libros__name">{{ libro.titulo }}</h3>
+                    <p class="libros__anio">Año {{ libro.publicado }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

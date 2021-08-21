@@ -4,9 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ListaEscritoresComponent } from './pages/lista-escritores/lista-escritores.component';
+import { MenuBarComponent } from './shared/menu-bar/menu-bar.component';
+import { EscritorDetalleComponent } from './pages/escritor-detalle/escritor-detalle.component';
+import { LibrosComponent } from './pages/libros/libros.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaEscritoresComponent,
+    MenuBarComponent,
+    EscritorDetalleComponent,
+    LibrosComponent
   ],
   imports: [
     BrowserModule,
