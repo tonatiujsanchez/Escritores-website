@@ -8,6 +8,7 @@ import { ListaEscritoresComponent } from './pages/lista-escritores/lista-escrito
 import { MenuBarComponent } from './shared/menu-bar/menu-bar.component';
 import { EscritorDetalleComponent } from './pages/escritor-detalle/escritor-detalle.component';
 import { LibrosComponent } from './pages/libros/libros.component';
+import { NetworkComponent } from './components/network/network.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LibrosComponent } from './pages/libros/libros.component';
     ListaEscritoresComponent,
     MenuBarComponent,
     EscritorDetalleComponent,
-    LibrosComponent
+    LibrosComponent,
+    NetworkComponent
   ],
   imports: [
     BrowserModule,

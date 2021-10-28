@@ -1,0 +1,7 @@
+<div class="alert network-online" *ngIf="networkConnection === 'online' && alertActive">
+    <p>Conexion restablecida.</p>
+</div>
+<div class="alert network-offline" *ngIf="networkConnection === 'offline' && alertActive">
+    <p>Se perdio la conexión.</p>
+</div>
+
